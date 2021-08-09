@@ -36,7 +36,7 @@ export const getListByDayWithAverages = (list) => {
       ...e,
       ...getAve(e.data),
     };
-  }); 
+  });
   return newDate;
 };
 
@@ -45,7 +45,8 @@ export const getListByDay = (list) => {
   let Day = {};
 
   list.forEach((element, index) => {
-    const dateTime = format(new Date(element.dt_txt), "yyyy-MM-dd");
+    const stDateTime = element.dt_txt.replace(/ /g, "T") + "Z";
+    const dateTime = format(new Date(stDateTime), "yyyy-MM-dd");
 
     if (isEqual(new Date(Day.dateTime), new Date(dateTime))) {
       Day = {
