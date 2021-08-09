@@ -1,6 +1,6 @@
 # Wather App
 
-You check the result from [Live Preview](https://behnameskandari.github.io/weatherapp/).
+You can check the result from [Live Preview](https://behnameskandari.github.io/weatherapp/).
 
 ## Description
 
