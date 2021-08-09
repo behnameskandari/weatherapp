@@ -1,6 +1,6 @@
 # Wather App
 
-This project was bootstrapped with [Live Preview](https://behnameskandari.github.io/weatherapp/).
+You check the result from [Live Preview](https://behnameskandari.github.io/weatherapp/).
 
 ## Description
 
