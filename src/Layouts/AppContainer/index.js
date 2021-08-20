@@ -21,7 +21,7 @@ function AppContainer() {
       units: "imperial",
     }).then(({ error, response }) => {
       if (error) {
-        dispatch(getWeatherListError(error.response?.statusText));
+        dispatch(getWeatherListError(error.response?.statusText)); 
       } else if (response) {
         const Data = getListByDayWithAverages(response.list);
         dispatch(getWeatherListSuccess(Data, response.city));
