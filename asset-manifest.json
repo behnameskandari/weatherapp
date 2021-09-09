@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/weather-app/static/css/main.203e7708.chunk.css",
-    "main.js": "/weather-app/static/js/main.c337ab95.chunk.js",
-    "main.js.map": "/weather-app/static/js/main.c337ab95.chunk.js.map",
-    "runtime-main.js": "/weather-app/static/js/runtime-main.4d90670a.js",
-    "runtime-main.js.map": "/weather-app/static/js/runtime-main.4d90670a.js.map",
-    "static/js/2.b4626cdf.chunk.js": "/weather-app/static/js/2.b4626cdf.chunk.js",
-    "static/js/2.b4626cdf.chunk.js.map": "/weather-app/static/js/2.b4626cdf.chunk.js.map",
-    "static/js/3.3985f419.chunk.js": "/weather-app/static/js/3.3985f419.chunk.js",
-    "static/js/3.3985f419.chunk.js.map": "/weather-app/static/js/3.3985f419.chunk.js.map",
-    "index.html": "/weather-app/index.html",
-    "static/css/main.203e7708.chunk.css.map": "/weather-app/static/css/main.203e7708.chunk.css.map",
-    "static/js/2.b4626cdf.chunk.js.LICENSE.txt": "/weather-app/static/js/2.b4626cdf.chunk.js.LICENSE.txt",
-    "static/media/munich.ac263ce5.jpg": "/weather-app/static/media/munich.ac263ce5.jpg"
+    "main.css": "/weatherapp/static/css/main.203e7708.chunk.css",
+    "main.js": "/weatherapp/static/js/main.c337ab95.chunk.js",
+    "main.js.map": "/weatherapp/static/js/main.c337ab95.chunk.js.map",
+    "runtime-main.js": "/weatherapp/static/js/runtime-main.aeb1c985.js",
+    "runtime-main.js.map": "/weatherapp/static/js/runtime-main.aeb1c985.js.map",
+    "static/js/2.b4626cdf.chunk.js": "/weatherapp/static/js/2.b4626cdf.chunk.js",
+    "static/js/2.b4626cdf.chunk.js.map": "/weatherapp/static/js/2.b4626cdf.chunk.js.map",
+    "static/js/3.3985f419.chunk.js": "/weatherapp/static/js/3.3985f419.chunk.js",
+    "static/js/3.3985f419.chunk.js.map": "/weatherapp/static/js/3.3985f419.chunk.js.map",
+    "index.html": "/weatherapp/index.html",
+    "static/css/main.203e7708.chunk.css.map": "/weatherapp/static/css/main.203e7708.chunk.css.map",
+    "static/js/2.b4626cdf.chunk.js.LICENSE.txt": "/weatherapp/static/js/2.b4626cdf.chunk.js.LICENSE.txt",
+    "static/media/munich.ac263ce5.jpg": "/weatherapp/static/media/munich.ac263ce5.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4d90670a.js",
+    "static/js/runtime-main.aeb1c985.js",
     "static/js/2.b4626cdf.chunk.js",
     "static/css/main.203e7708.chunk.css",
     "static/js/main.c337ab95.chunk.js"
