@@ -1,6 +1,6 @@
 {
   "name": "weather-app",
-  "homepage": "http://behnameskandari.github.io/weatherapp",
+  "homepage": "https://behnameskandari.github.io/weatherapp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
