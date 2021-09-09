@@ -4,15 +4,15 @@ import Grid from "@material-ui/core/Grid";
 import { Loading } from "..";
 import { Temperatures } from "../Temperatures";
 
-function Main() {
+function Main({ callApi }) {
   const { loading } = useSelector((state) => state.weather);
   if (loading) {
     return <Loading />;
   }
-  
+
   return (
     <Grid container spacing={3}>
-      <Temperatures />
+      <Temperatures callApi={callApi} />
     </Grid>
   );
 }

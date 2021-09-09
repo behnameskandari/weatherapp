@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ArrowBack, ArrowForward } from "@material-ui/icons";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+
 import {
   Grid,
   Button,
@@ -22,11 +24,15 @@ const useStyles = makeStyles({
     marginLeft: "-17px",
   },
 });
-function Temperatures() {
+function Temperatures({ callApi }) {
   const { city, list } = useSelector((state) => state.weather);
   const [unit, setUnit] = useState("F");
   const [selectedDate, setSelectedDate] = useState(null);
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(0);
+  const matches = useMediaQuery("(min-width:380px)");
+
+  useEffect(() => {});
+
   const classes = useStyles();
 
   useEffect(() => {
@@ -34,7 +40,7 @@ function Temperatures() {
       setSelectedDate(list[0]);
     }
   }, [list]);
-  
+
   return (
     <>
       <Grid item xs={12}>
@@ -45,7 +51,7 @@ function Temperatures() {
         />
       </Grid>
 
-      <Grid item xs={12}>
+      <Grid item xs={6}>
         <FormControl component="fieldset">
           <FormLabel component="legend">Unit</FormLabel>
           <RadioGroup
@@ -69,9 +75,20 @@ function Temperatures() {
           </RadioGroup>
         </FormControl>
       </Grid>
+      <Grid item xs={6}>
+        <Button
+          color="primary"
+          onClick={() => {
+            callApi();
+          }}
+          className={classes.right}
+        >
+          Refresh
+        </Button>
+      </Grid>
 
       <Grid item xs={12}>
-        {page !== 1 && (
+        {page !== 0 && (
           <Button
             onClick={() => {
               setPage(page - 1);
@@ -83,7 +100,7 @@ function Temperatures() {
           </Button>
         )}
 
-        {list.length / 3 > page && (
+        {list.length - 1 > page && (
           <Button
             onClick={() => {
               setPage(page + 1);
@@ -96,7 +113,7 @@ function Temperatures() {
         )}
       </Grid>
 
-      {list.slice((page - 1) * 3, (page - 1) * 3 + 3).map((item) => {
+      {list.slice(page, page + (matches ? 3 : 1)).map((item) => {
         return (
           <Grid item xs={12} sm={6} md={6} lg={4}>
             <AppTempCard onClick={setSelectedDate} unit={unit} item={item} />
